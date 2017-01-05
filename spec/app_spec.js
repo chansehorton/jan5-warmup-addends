@@ -12,8 +12,12 @@ const indArr3 = [0,6];
 
 describe('tests for app.js', function() {
   it('should search an array for two integers which add up to a given integer and return the indices of those integers in an array', function() {
-    expect(addends(array1, sum1)).toBe(indArr1);
-    expect(addends(array1, sum2)).toBe(indArr2);
-    expect(addends(array1, sum3)).toBe(indArr3);
+    expect(addends(array1, sum1)).toEqual(indArr1);
+  });
+  it('should search an array for two integers which add up to a given integer and return the indices of those integers in an array', function() {
+    expect(addends(array1, sum2)).toEqual(indArr2);
+  });
+  it('should search an array for two integers which add up to a given integer and return the indices of those integers in an array', function() {
+    expect(addends(array1, sum3)).toEqual(indArr3);
   });
 });
